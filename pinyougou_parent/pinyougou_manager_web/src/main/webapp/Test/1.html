@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+    <script type="text/javascript">
+        //定义函数
+        function hello($scope) {
+            $scope.aini={name:"烦死人",age:"20"}
+        }
+    </script>
+</head>
+<body ng-app ng-controller="hello">
+{{100+100}}<br>
+输入姓名:<input ng-model="myname">
+<br>
+{{myname}},你好<br>
+{{aini.name}}
+
+</body>
+</html>

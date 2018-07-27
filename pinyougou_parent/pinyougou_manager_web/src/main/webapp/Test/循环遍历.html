@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+    <script type="text/javascript">
+        //定义一个模块,一个模块可以有多个控制器
+        var myModule = angular.module("demo", []);
+        //控制器
+        myModule.controller("myController", function ($scope) {
+            $scope.user = [
+                {name: "gzm",shuxing: "ab"},
+                {name: "lll",shuxing: "sb"},
+                {name: "www",shuxing: "bb"}
+            ];
+        })
+
+    </script>
+</head>
+<body  ng-app="demo" ng-controller="myController">
+<!-- ng-repeat遍历标签必须写在下级标签中 -->
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>属性</td>
+
+        </tr>
+        <tr ng-repeat="entity in user">
+            <td>{{entity.name}}</td>
+            <td>{{entity.shuxing}}</td>
+        </tr>
+    </table>
+</body>
+</html>

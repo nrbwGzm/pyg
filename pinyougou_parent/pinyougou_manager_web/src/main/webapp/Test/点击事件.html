@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+    <script type="text/javascript">
+        //定义一个模块,一个模块可以有多个控制器
+        var myModule = angular.module("demo", []);
+        //控制器
+        myModule.controller("myController", function ($scope) {
+            $scope.add = function () {
+                //字符串拼接
+                // $scope.c = $scope.a + $scope.b
+                //转为int 运算
+                $scope.c = parseInt($scope.a) + parseInt($scope.b)
+            }
+        })
+
+    </script>
+</head>
+<body ng-app="demo">
+<!-- 如果有多个控制器,可绑定到多个标签上 -->
+<div ng-controller="myController">
+    <input ng-model="a">+ <input ng-model="b">
+    <button ng-click="add()">=</button><input ng-model="c">
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+    <script type="text/javascript">
+        //定义一个模块,一个模块可以有多个控制器
+        var myModule = angular.module("demo", []);
+        //控制器
+        myModule.controller("myController", function ($scope) {
+            $scope.demoUser=function () {
+                $scope.user={age:"11",name: "gzm"}
+
+            }
+
+        })
+
+    </script>
+</head>
+<body ng-app="demo" >
+<!-- 如果有多个控制器,可绑定到多个标签上 -->
+<!-- ng-init为初始化方法 -->
+<div ng-controller="myController" ng-init="demoUser()">
+    {{user.name}}<br>
+    {{user.age}}
+</div>
+
+
+</body>
+</html>
