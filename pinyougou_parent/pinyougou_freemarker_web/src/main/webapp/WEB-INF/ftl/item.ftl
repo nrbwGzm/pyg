@@ -18,6 +18,9 @@
     <script type="text/javascript" src="./js/controller/itemController.js"></script>
 
     <script type="text/javascript">
+
+        var id =${item.id?c};//?c：去除数字千位逗号分隔符，例如：1,000 ——> 1000
+
         var spec =${item.spec};
 
         var itemList = [
@@ -57,7 +60,7 @@
         <div class="product-info">
             <div class="fl preview-wrap">
                 <!--放大镜效果-->
-            <#-- ?eval : 将json字符串转换为对象-->
+                    <#-- ?eval : 将json字符串转换为对象-->
 					<#assign images=goods.tbGoodsDesc.itemImages?eval/>
 
                 <div class="zoom">
@@ -88,7 +91,7 @@
                 <div class="sku-name">
                     <h4>${item.title}</h4>
                 </div>
-                <#-- !'' 表示 如果为空,将显示空字符串-->
+            <#-- !'' 表示 如果为空,将显示空字符串-->
                 <div class="news"><span>${item.sellPoint!''}</span></div>
                 <div class="summary">
                     <div class="summary-wrap">
@@ -116,7 +119,7 @@
                     </div>
                 </div>
                 <div class="support">
-                                                <#-- ?eval : 将json字符串转换为对象-->
+                <#-- ?eval : 将json字符串转换为对象-->
 						<#assign customAttributeItems=goods.tbGoodsDesc.customAttributeItems?eval/>
 						<#list customAttributeItems as custom>
 							<div class="summary-wrap">
@@ -175,7 +178,9 @@
                         <div class="fl">
                             <ul class="btn-choose unstyled">
                                 <li>
-                                    <a href="cart.html" target="_blank" class="sui-btn  btn-danger addshopcar">加入购物车</a>
+                                    <button ng-click="addGoodsToCartList()" class="sui-btn  btn-danger addshopcar">
+                                        加入购物车
+                                    </button>
                                 </li>
                             </ul>
                         </div>

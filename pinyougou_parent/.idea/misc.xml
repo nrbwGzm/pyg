@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_cart_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_cart_web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_content_service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_freemarker_web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_itemPage_consumer" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_manager_web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_order_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_pay_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_pay_web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_portal" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_search_service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_search_web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_seckill_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_seckill_task" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_seckill_web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_sellergoods_service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou_shop_web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_sms" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_user_service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou_user_web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../http_client_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/sssss/pom.xml" />
       </list>
     </option>
   </component>

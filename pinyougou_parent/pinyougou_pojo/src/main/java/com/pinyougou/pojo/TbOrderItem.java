@@ -3,6 +3,8 @@ package com.pinyougou.pojo;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+
+//订单类,一个sku商品对应一个订单,含有购买数量属性
 public class TbOrderItem   implements Serializable {
     private Long id;
 
@@ -14,10 +16,13 @@ public class TbOrderItem   implements Serializable {
 
     private String title;
 
+    //单价
     private BigDecimal price;
 
+    //商品购买数量
     private Integer num;
 
+    //总价
     private BigDecimal totalFee;
 
     private String picPath;
