@@ -1,0 +1,9 @@
+此模块运用了spring框架的spring-task定时任务技术，来定时同步秒杀商品到Redis缓存中（每XX秒同步一次）
+
+需要的配置：
+1. resources下添加 applicationContext-task.xml
+2. 指定包扫描的包下的类中的方法上，添加@Scheduled注解，注解中添加cron表达式
+    cron表达式格式：，秒 分 时 日 月 周  （为防止日期冲突，日和周只需要写一个，占位符：？代表不指定，*代表每(时间单位)都执行）
+
+ @Scheduled(cron = "0/30 * * * * ?") //每30s执行一次下面的方法，Scheduled：计划，cron：计划任务表达式
+    public void synchronizeSeckillGoodsToRedis() {...}   //同步秒杀商品到Redis缓存中
