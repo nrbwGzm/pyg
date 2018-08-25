@@ -23,6 +23,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
         //CAS与spring-security整合,spring-security提供一个用户名,password置空,由CAS给password那填一个ticket票据,实现单点登陆
         return new User(username,"",list);
-    }
+}
 }
 

@@ -140,9 +140,7 @@ public class ContentServiceImpl implements ContentService {
             redisTemplate.boundHashOps("contentList").put(categoryId,list);
         } else {
             System.out.println("当前有缓存,数据从redis获取");
-
         }
         return list;
     }
-
 }

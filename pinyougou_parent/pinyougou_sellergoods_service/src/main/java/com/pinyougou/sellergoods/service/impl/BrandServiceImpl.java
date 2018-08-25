@@ -54,6 +54,11 @@ public class BrandServiceImpl implements BrandService {
     }
 
     @Override
+    public List<Map> showChart() {
+        return  brandMapper.showChart();
+    }
+
+    @Override
     public void add(TbBrand tbBrand) {
          brandMapper.insert(tbBrand);
     }

@@ -89,5 +89,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:4.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:4.1.0.RELEASE" level="project" />
     <orderEntry type="module" module-name="pinyougou_content_interface" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi:3.11" level="project" />
   </component>
 </module>

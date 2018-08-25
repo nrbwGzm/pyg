@@ -110,6 +110,13 @@
             <artifactId>pinyougou_content_interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- POI : java代码操作office文档，这里用于导出Excel表格 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.11</version>
+        </dependency>
+
     </dependencies>
 
 

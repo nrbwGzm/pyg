@@ -182,4 +182,9 @@
   <select id="findBrandList" resultType="map">
     select id,name as text from tb_brand
   </select>
+
+  <!--统计商家销售额，饼状图 -->
+  <select id="showChart" resultType="map">
+      select seller_id name ,sum(payment) y from tb_order where seller_id is not null GROUP BY seller_id
+  </select>
 </mapper>

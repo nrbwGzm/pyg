@@ -32,4 +32,6 @@ public interface TbBrandMapper {
 
     List<Map> findBrandList();
 
+    List<Map> showChart();
+
 }

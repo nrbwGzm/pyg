@@ -4,6 +4,9 @@ app.controller('brandController', function ($scope,$controller, brandService) { 
     //继承baseController  其本质是共用一个$scope作用域
     $controller("baseController",{$scope:$scope})   //单引号和双引号没有区别
 
+     $scope.exportXls=function () {
+        window.open("../brand/exportXls");
+    }
     /*$scope.findPage = function (pageNum, pageSize) {
         brandService.findPage(pageNum, pageSize).success(function (response) {
             // response={total:100,rows:[{},{},{}]}  总条数  当前页数据

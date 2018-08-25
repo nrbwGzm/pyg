@@ -24,4 +24,6 @@ public interface BrandService {
 
     List<Map> findBrandList();
 
+    List<Map> showChart();
+
 }

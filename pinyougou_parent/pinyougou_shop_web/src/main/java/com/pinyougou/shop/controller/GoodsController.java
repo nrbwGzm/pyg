@@ -25,9 +25,6 @@ public class GoodsController {
 	@Reference
 	private GoodsService goodsService;
 
-
-
-
 	//	/'+selectIds+"/"+auditStatus);
 	@RequestMapping("/updateMarketable/{ids}/{market}")
 	public Result  updateMarketable(@PathVariable("ids") Long[] ids,@PathVariable("market") String market){
@@ -66,7 +63,6 @@ public class GoodsController {
 	@RequestMapping("/add")
 	public Result add(@RequestBody Goods goods){
 		try {
-
 			goods.getTbGoods().setSellerId(SecurityContextHolder.getContext().getAuthentication().getName());
 			goodsService.add(goods);
 			return new Result(true, "增加成功");
@@ -134,5 +130,6 @@ public class GoodsController {
 		goods.setSellerId(SecurityContextHolder.getContext().getAuthentication().getName());
 		return goodsService.findPage(goods, pageNum, pageSize);
 	}
+
 
 }

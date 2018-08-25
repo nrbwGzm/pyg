@@ -64,10 +64,8 @@ public class GoodsController {
 	 * @return
 	 */
 	@RequestMapping("/findOne/{id}")
-	public TbGoods findOne(@PathVariable("id") Long id){
-		Goods goods = goodsService.findOne(id);
-		TbGoods tbGoods = goods.getTbGoods();
-		return tbGoods;
+	public Goods findOne(@PathVariable("id") Long id){
+		return goodsService.findOne(id);
 	}
 	
 	/**
